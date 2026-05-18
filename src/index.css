@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 font-sans;
+  }
+
+  h1 {
+    @apply font-serif text-6xl md:text-7xl font-light tracking-wider text-gray-900;
+  }
+
+  h2 {
+    @apply font-serif text-4xl md:text-5xl font-light tracking-wide text-gray-900;
+  }
+
+  h3 {
+    @apply font-serif text-2xl md:text-3xl font-light tracking-wide text-gray-800;
+  }
+
+  h4 {
+    @apply font-sans text-lg md:text-xl font-semibold tracking-wide uppercase text-gray-900;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed text-gray-700;
+  }
+
+  a {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+@layer components {
+  .luxury-button {
+    @apply px-8 py-3 bg-gray-900 text-white font-sans font-semibold tracking-widest uppercase transition-all duration-300 hover:bg-gray-800 hover:shadow-lg;
+  }
+
+  .luxury-button-outline {
+    @apply px-8 py-3 border-2 border-gray-900 text-gray-900 font-sans font-semibold tracking-widest uppercase transition-all duration-300 hover:bg-gray-900 hover:text-white;
+  }
+
+  .luxury-button-gold {
+    @apply px-8 py-3 text-white font-sans font-semibold tracking-widest uppercase transition-all duration-300 hover:shadow-lg;
+    background-color: #d4af37;
+  }
+
+  .luxury-button-gold:hover {
+    background-color: #b8860b;
+  }
+
+  .section-padding {
+    @apply px-4 md:px-8 lg:px-16 py-16 md:py-24 lg:py-32;
+  }
+
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card-luxury {
+    @apply bg-white border border-gray-200 transition-all duration-500 hover:shadow-2xl;
+  }
+
+  .text-luxury {
+    @apply font-serif font-light tracking-wider;
+  }
+
+  .divider-luxury {
+    @apply w-12 h-1 mx-auto my-6;
+    background-color: #d4af37;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background-color: #d4af37;
+  color: white;
+}
+
+/* Button styles */
+button {
+  font-family: inherit;
+}
+
+/* Form elements styling */
+input,
+textarea,
+select {
+  @apply border border-gray-300 px-4 py-2 font-sans focus:outline-none transition-all duration-300;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #d4af37;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+/* Image styling for luxury */
+img {
+  @apply max-w-full h-auto;
+}
